@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigMag</title>
+    <link href="./css/gallery.css" rel="stylesheet" />
+    <link href="./css/extra.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img loading="lazy" src="./assets/logo.svg" />
+          <img loading="lazy" class="ham" src="./assets/ham.svg" alt="" />
+        </div>
+        <ul>
+          <li><a class="home-active" href="./index.html">Home</a></li>
+          <li><a href="./articles.html">Articles</a></li>
+          <li><a href="./poems.html">Poems</a></li>
+          <li><a href="./photos.html">Photos</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      class="buttons flex items-center justify-center py-4 md:py-4 flex-wrap"
+    >
+      <button id="all" class="bg-gray-200 px-3 py-2 mr-5 rounded-md">
+        All
+      </button>
+      <button class="bg-gray-200 px-3 py-2 mr-5 rounded-md" id="2021">
+        2021
+      </button>
+      <button class="bg-gray-200 px-3 py-2 mr-5 rounded-md" id="2022">
+        2022
+      </button>
+    </div>
+
+    <div class="p-10 flex flex-col items-center content-center">
+      <div class="block md:grid grid-cols-3 gap-10 w-full h-full">
+        <img
+          loading="lazy"
+          data-year="2021"
+          class="image mb-10 w-full h-full object-cover cursor-pointer md:hover:scale-105 transition-transform duration-300 transform rounded-lg"
+          src="./gallery/image4.jpg"
+          alt="Image"
+        />
+        <img
+          loading="lazy"
+          data-year="2021"
+          class="image mb-10 w-full h-full object-cover cursor-pointer md:hover:scale-105 transition-transform duration-300 transform rounded-lg"
+          src="./gallery/image5.jpg"
+          alt="Image"
+        />
+        <img
+          loading="lazy"
+          data-year="2021"
+          class="image mb-10 w-full h-full object-cover cursor-pointer md:hover:scale-105 transition-transform duration-300 transform rounded-lg"
+          src="./gallery/image6.jpg"
+          alt="Image"
+        />
+        <img
+          loading="lazy"
+          data-year="2021"
+          class="image mb-10 w-full h-full object-cover cursor-pointer md:hover:scale-105 transition-transform duration-300 transform rounded-lg"
+          src="./gallery/image7.jpg"
+          alt="Image"
+        />
+        <img
+          loading="lazy"
+          data-year="2022"
+          class="image mb-10 w-full h-full object-cover cursor-pointer md:hover:scale-105 transition-transform duration-300 transform rounded-lg"
+          src="./gallery/image1.jpg"
+          alt="Image"
+        />
+        <img
+          loading="lazy"
+          data-year="2022"
+          class="image mb-10 w-full h-full object-cover cursor-pointer md:hover:scale-105 transition-transform duration-300 transform rounded-lg"
+          src="./gallery/image2.jpg"
+          alt="Image"
+        />
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-screen-sm mt-10 text-center lg:mb-16 mb-8">
+      <h2
+        class="faculty-intro mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white-900 lg:text-white"
+      >
+        Faculty
+      </h2>
+    </div>
+    <div class="pain grid grid-cols-6 gap-1 mb-10">
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Dr. Shiju George.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          Dr. Shiju George
+        </h4>
+      </div>
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Sandhya Ramakrishnan.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          Sandhya Ramakrishnan
+        </h4>
+      </div>
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Thomas Varghese.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          Thomas Varghese
+        </h4>
+      </div>
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Dr. Asha Joseph.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          Dr. Asha Joseph
+        </h4>
+      </div>
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Tojin Xavier.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          Tojin Xavier
+        </h4>
+      </div>
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Midhuna Jyothi R.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          Midhuna Jyothi R
+        </h4>
+      </div>
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Saumya Sadanandan.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          Saumya Sadanandan
+        </h4>
+      </div>
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Jinsy Lukose.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          Jinsy Lukose
+        </h4>
+      </div>
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Naveena Tresa Joseph.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          Naveena Tresa Joseph
+        </h4>
+      </div>
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Harikrishnan.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          R Harikrishnan
+        </h4>
+      </div>
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/P G Renjithkumar.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          P G Renjithkumar
+        </h4>
+      </div>
+      <div>
+        <img
+          loading="lazy"
+          class="p-5 w-48 h-48 object-cover rounded-full m-auto"
+          src="./faculty/Jyothikumari P.jpg"
+          alt="Image"
+        />
+        <h4 class="faculty-name text-center font-semibold mt-3">
+          Jyothikumari P
+        </h4>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

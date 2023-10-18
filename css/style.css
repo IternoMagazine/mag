@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,400;0,700;1,500&family=Zen+Dots&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Alegreya Sans SC", sans-serif;
+  background-color: #182432;
+  color: #fff;
+}
+
+header {
+  background-image: url("../assets/background.png");
+  padding: 0 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+nav .logo img {
+  width: 100px;
+  object-fit: contain;
+}
+
+nav .logo img.ham {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  color: white;
+  font-size: 1.1rem;
+  gap: 2.5rem;
+}
+
+h1,
+h2 {
+  font-family: "Zen Dots", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 90px;
+  text-shadow: 20px 20px rgba(130, 130, 130, 0.2), #fc0 1px 0 10px;
+}
+.home-active{
+  color: #4070f4;
+ 
+}
+nav li:hover{
+  cursor: pointer;
+  text-shadow: 0 0 6px rgb(255, 255, 255);
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h2.stroke {
+  -webkit-text-stroke: 1px #fff;
+  color: #111;
+}
+
+header p {
+  margin-top: 40px;
+  font-size: 1.6rem;
+  width: 50%;
+}
+
+header .btn {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 600;
+  width: 244px;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  border: 2px solid #af04ff;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+header .btn span {
+  color: #af04ff;
+  margin-left: 10px;
+}
+
+header .btn .text {
+  position: relative;
+  color: #af04ff;
+  font-size: 30px;
+  font-weight: 600;
+  width: 1000px;
+}
+
+header .btn .text.first-text {
+  color: #fff;
+}
+
+header .text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  border-left: 2px solid #4070f4;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav .logo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: space-between;
+  }
+
+  header nav .logo img.ham {
+    display: block;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  header nav li {
+    flex-direction: column;
+    width: 100%;
+    background: rgba(65, 65, 65, 0.8);
+    margin-bottom: 20px;
+    padding: 7px 10px;
+    border-radius: 5px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header h2 {
+    font-size: 3rem;
+  }
+
+  header p {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  header .btn {
+    font-size: 1.2rem;
+  }
+}
+
+.team {
+  margin-top: 60px;
+  padding: 0 100px;
+}
+
+.team h1 {
+  text-align: center;
+  font-family: "Zen Dots", sans-serif;
+  font-size: 3rem;
+  text-shadow: rgb(139, 139, 139) 1px 0 10px;
+
+  -webkit-text-stroke: 2px #fff;
+
+  margin-bottom: 50px;
+}
+
+.team h1 .our-span {
+  color: #182432;
+}
+
+.team h1 .team-span {
+  color: #ccc;
+}
+
+.team h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.team .team-row {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+
+.team .team-row .profile img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.team .team-row .profile p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .team {
+    padding: 0 20px;
+  }
+  .team .team-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team .team-row .profile img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* JS Classes */
+
+.show {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  blockquote p {
+    font-size: 16px !important;
+  }
+
+  .messages .target {
+    height: 500px;
+  }
+}

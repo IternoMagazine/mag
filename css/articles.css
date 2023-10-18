@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,400;0,700;1,500&family=Zen+Dots&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../assets/background.png") fixed;
+  font-family: Alegreya Sans SC;
+  
+}
+
+main {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.right li {
+  font-size: 1.4rem;
+  list-style: none;
+  font-weight: bolder;
+  color: #333;
+  padding: 0;
+}
+.name {
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+
+h2.stroke {
+  -webkit-text-stroke: 1px #ff0000;
+  color: #ffffff;
+  font-size: 4rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.container .left {
+  position: fixed;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: transparent;
+  backdrop-filter: 20px (blur);
+  padding:40px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+  height: fit-content;
+  /* position: fixed; */
+  top: 20px;
+  left: 20px;
+  width: 240px;
+  margin-right: 20px;/* Add margin to separate left and right columns */
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
+  margin-left: 290px;
+  width: 75%;
+  animation: fadeInRight 1s both;
+}
+.right p {
+  padding-bottom: 40px;
+}
+
+.left {
+  margin-top: 188px;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.image-box {
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(135deg, #6ab04c, #4568dc);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.about {
+  height: 200px;
+  width: 200px;
+  background: linear-gradieaqnt(135deg, #e74c3c, #f39c12);
+  border-radius: 10px;
+}
+.glow {
+  color: rgb(255, 28, 28);
+  text-shadow: 0 0 6px rgb(33, 0, 248);
+}
+@media (max-width: 768px) {
+  .left {
+    width: auto;
+    position: static;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: none;
+  }
+  .right {
+    width: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .right li {
+    text-align: center;
+    padding: 0;
+  }
+  .right p {
+    padding-bottom: 40px;
+  }
+  .name {
+    padding-bottom: 60px;
+  }
+}

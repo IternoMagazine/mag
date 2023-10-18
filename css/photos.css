@@ -1,0 +1,41 @@
+.photos {
+  padding: 0 100px;
+}
+
+.photos .photo-container {
+  margin-bottom: 90px;
+}
+
+.photos h2.photos-heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.photos h2.name {
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+
+.photos .image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.photos .image-container img {
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .photos {
+    padding: 0 20px;
+  }
+  .photos .image-container {
+    grid-template-columns: 1fr;
+  }
+  .photos .image-container img {
+    height: 300px;
+  }
+}

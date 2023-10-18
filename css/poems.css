@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,400;0,700;1,500&family=Zen+Dots&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url("../assets/background.png") fixed;
+  font-family: Alegreya Sans SC;
+}
+
+.poem1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poem3-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poem4-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poem1 {
+  background-image: url("../assets/image1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 90%;
+  height: 100%;
+}
+
+.poem1 .text {
+  display: flex;
+  padding: 13px 0px;
+  justify-content: space-around;
+  height: 80vh;
+  backdrop-filter: blur(10px);
+  gap: 10px;
+}
+
+.text .title {
+  margin-left: -100px;
+  margin-top: 50px;
+}
+
+.text .content {
+  display: flex;
+  align-items: center;
+  width: 22rem;
+  font-size: 16px;
+  transform: rotate(26.227deg);
+}
+
+.layer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer1 {
+  background: linear-gradient(
+    180deg,
+    rgba(219, 220, 224, 0.56) 0%,
+    rgba(45, 27, 14, 0.82) 100%
+  );
+  filter: blur(50px);
+  width: 90%;
+  height: 150px;
+}
+
+.poem2-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poem2 {
+  background-image: url("../assets/image2.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 54rem;
+}
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  width: fit-content;
+  height: fit-content;
+  transform: rotate(-9.21deg);
+}
+
+.text2 .title2 {
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.text2 .content2 {
+  margin-top: -50px;
+  font-size: 26px;
+  width: 25rem;
+}
+
+.layer2 {
+  background: linear-gradient(
+    180deg,
+    rgba(77, 45, 24, 0.35) 0%,
+    rgba(224, 224, 224, 0.82) 99.99%,
+    rgba(48, 29, 14, 0.82) 100%
+  );
+  filter: blur(50px);
+  width: 90%;
+  height: 150px;
+}
+
+.poem3 {
+  background-image: url("../assets/image4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 90%;
+  height: auto;
+}
+
+.text3 {
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title3 {
+  font-size: 32px;
+  margin-top: 150px;
+}
+
+.content3 {
+  margin-top: 150px;
+  font-size: 24px;
+  margin-bottom: 150px;
+}
+
+.layer3 {
+  background: linear-gradient(
+    180deg,
+    rgba(77, 45, 24, 0.35) 0%,
+    rgba(235, 235, 235, 0.82) 0.01%,
+    rgba(225, 225, 225, 0.82) 0.02%,
+    rgba(126, 118, 115, 0.82) 96.52%,
+    rgba(224, 224, 224, 0.82) 99.99%
+  );
+  filter: blur(50px);
+  width: 90%;
+  height: 150px;
+}
+
+.poem4 {
+  background-image: url("../assets/image3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 90%;
+  height: auto;
+}
+
+.text4 {
+  backdrop-filter: blur(10px);
+  outline-color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title4 {
+  font-size: 32px;
+  margin-top: 150px;
+}
+
+.content4 {
+  width: 42rem;
+  font-size: 20px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .poem1-container {
+    width: 100%;
+  }
+
+  .poem1 {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .poem2 {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .poem3 {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .poem4 {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text .title {
+    text-align: center;
+    margin-left: 10px;
+    padding: 5px;
+    transform: rotate(0deg);
+  }
+
+  .text .content {
+    transform: rotate(0deg);
+    margin-top: -160px;
+    padding-right: 20px;
+    font-size: 14px;
+    width: 370px;
+  }
+
+  .text2 {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(0deg);
+  }
+
+  .text2 .title2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .text2 .content2 {
+    font-size: 22px;
+    margin-top: -80px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .text3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text3 .title3 {
+    font-size: 32px;
+    margin-bottom: -60px;
+  }
+
+  .text3 .content3 {
+    font-size: 22px;
+  }
+
+  .text4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text4 .title4 {
+    font-size: 32px;
+  }
+
+  .text4 .content4 {
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 10px;
+    width: fit-content;
+    padding: 30px;
+  }
+}
